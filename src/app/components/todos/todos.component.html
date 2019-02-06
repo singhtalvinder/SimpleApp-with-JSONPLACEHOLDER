@@ -1,0 +1,11 @@
+<!-- Pass each todo to the app todo item component for processsing. -->
+<app-add-todo (addTodo)="addTodo($event)"></app-add-todo>
+<app-todo-item *ngFor="let todo of todos" 
+[todo]="todo"
+(deleteTodo)="deleteTodo($event)">
+</app-todo-item>
+
+<!-- <ul *ngFor="let todo of todos">
+  <li>{{todo.title}}</li>
+
+</ul> -->

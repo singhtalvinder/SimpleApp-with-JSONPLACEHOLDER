@@ -1,0 +1,9 @@
+<form class="form" (ngSubmit)="onSubmit()">
+  <!-- bind(using 2-way data binding) the title here to the title prop in the ts file. -->
+   <!-- we need to use the forms module inorder to use ngModel . -->
+  <input type="text" name="title" [(ngModel)] ="title"
+  placeholder="Add Todo...">
+
+  <input type="submit" value="Submit" class="btn">
+
+</form>
